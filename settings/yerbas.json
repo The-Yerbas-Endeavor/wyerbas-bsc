@@ -1,0 +1,13 @@
+{
+  "changeAddress": "8gzQQitSFGnVXUoMPwsRLYAEx5QRGTL78y",
+  "changeConfirmations": 5,
+  "depositConfirmations": 6,
+  "taxPayoutAddresses": [
+    "ySdCmwY7PBN2BrFjPid2cJJNU4Um8MHW9a", 
+    "yd2RJ2J2LkvJyTiuQkkiq2AWRtRkDs4XLt",
+    "yS1w9qRmuKgbjBJ26psHgyipTVN2QBtsYj",
+    "yR5PtPZddurx9pNQicFDBV38aq4Ye1wKgg",
+    "yLUiB3bVR8MNL41ajGC2XvdmiYZkfP4ew5"
+  ],
+  "syncDelayThreshold": 15
+}
