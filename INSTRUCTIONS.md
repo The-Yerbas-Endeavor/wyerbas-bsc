@@ -11,7 +11,7 @@
 - Run `yerbas-cli importaddress "REDEEM_SCRIPT" "" true true` where REDEEM_SCRIPT is from running `yerbas-cli create multisig...`.
 
 #### 2. Add BSC private key.
-- Copy the private key file  `cp /wyerbas-bsc/settings/EXAMPLE.private.DO_NOT_SHARE_THIS.json /wyerbas-bsc/settings/private.DO_NOT_SHARE_THIS.json`
+- Copy the private key file  `cp ~/wyerbas-bsc/settings/EXAMPLE.private.DO_NOT_SHARE_THIS.json ~/wyerbas-bsc/settings/private.DO_NOT_SHARE_THIS.json`
 - In `settings/private.DO_NOT_SHARE_THIS.json`, replace `0xExampleWhichYouShouldReplace` with your BSC_WALLET_PRIVATE_KEY. Ensure that the double quotes remain around your private key.
 - DO NOT REVEAL THIS AT ALL COSTS.
 
@@ -46,7 +46,7 @@
     - `sudo chmod -R g=rX /etc/letsencrypt`
     - Re-login.
 - Add CERTIFICATE_PATH and KEY_PATH to wyerbas settings:
-    - Copy the ssl file  `cp /wyerbas-bsc/settings/ssl.EXAMPLE.json /wyerbas-bsc/settings/ssl.json`
+    - Copy the ssl file  `cp ~/wyerbas-bsc/settings/ssl.EXAMPLE.json ~/wyerbas-bsc/settings/ssl.json`
     - Open `wyerbas/settings/ssl.json`
     - Set value of `certPath` and `key_path` to CERTIFICATE_PATH and KEY_PATH respectively.
     - e.g. `ssl.json`:
