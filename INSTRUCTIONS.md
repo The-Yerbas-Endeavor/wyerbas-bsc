@@ -6,8 +6,8 @@
 
 #### 1. Add Change address to yerbas wallet:
 - Ensure Yerbas daemon is running: `yerbasd`.
-- Run `./yerbas-cli createmultisig 3 "[\"020a16865dcfbb809c03bef35cf1f96b3811dc1a77e3c156ab82d0cdbf1a6f7870\", \"029866d5494c10752d97314cd8522ac5b87a15476a41a7473b0a21d55bae1e018b\", \"0232db6756b6dd7bb8b79959af50b3d3110c4029d392709008de6a55647464f918\", \"0215ab24c8f808d3604097811547d9bbdeea0fdf1f592c7328fbebbcd84708a82c\", \"0245fe3d0363673a483a3c330829eeb7663930a46e9ef74d67f11fd7557d1a206b\"]"`
-- Ensure that the output is `8gzQQitSFGnVXUoMPwsRLYAEx5QRGTL78y`. This will be the CHANGE_ADDRESS where all holdings are collated at every payout.
+- Run `./yerbas-cli createmultisig 3 "[\"020a16865dcfbb809c03bef35cf1f96b3811dc1a77e3c156ab82d0cdbf1a6f7870\", \"033061b8b122fd581aadce0c3cd0fdcc537e38daf795dbbbdf70ffc67dc1bb5daf\", \"0232db6756b6dd7bb8b79959af50b3d3110c4029d392709008de6a55647464f918\", \"0215ab24c8f808d3604097811547d9bbdeea0fdf1f592c7328fbebbcd84708a82c\", \"0245fe3d0363673a483a3c330829eeb7663930a46e9ef74d67f11fd7557d1a206b\"]"`
+- Ensure that the output is `8tzq3gs1rkpbCNZ6KwPLaPPyZDXxhp1bsu`. This will be the CHANGE_ADDRESS where all holdings are collated at every payout.
 - Run `yerbas-cli importaddress "REDEEM_SCRIPT" "" true true` where REDEEM_SCRIPT is from running `yerbas-cli create multisig...`.
 
 #### 2. Add BSC private key.
@@ -46,7 +46,7 @@
     - `sudo chmod -R g=rX /etc/letsencrypt`
     - Re-login.
 - Add CERTIFICATE_PATH and KEY_PATH to wyerbas settings:
-    - Copy the ssl file  `cp ~/wyerbas-bsc/settings/ssl.EXAMPLE.json ~/wyerbas-bsc/settings/ssl.json`
+    - Copy the ssl file  `cp ~/wyerbas-bsc/settings/ssl-EXAMPLE.json ~/wyerbas-bsc/settings/ssl.json`
     - Open `wyerbas/settings/ssl.json`
     - Set value of `certPath` and `key_path` to CERTIFICATE_PATH and KEY_PATH respectively.
     - e.g. `ssl.json`:
@@ -60,7 +60,7 @@
 #### 5. Install nodejs and yarn, and setup project dependencies.
 - `sudo apt install nodejs npm`
 - `sudo npm install -g yarn`
-- `cd wyerbas`; `yarn install`
+- `cd wyerbas-bsc`; `yarn install`
 
 #### 6. Ensure that port ~~32533~~ 8443 is open. Use https://www.yougetsignal.com/tools/open-ports/ to check that port 8443 on your node can be reached with the authority daemon running. If not, check your firewall/VPS provider/ISP settings to make sure that port 8443 is not blocked.
 

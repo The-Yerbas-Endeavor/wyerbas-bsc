@@ -1,32 +1,32 @@
 
 
 {
-  "port": 8443,
+  "port": 15430,
   "authorityThreshold": 3,
   "authorityNodes": [
     {
       "hostname": "n0.yerbas.org",
-      "port": 8443,
+      "port": 15430,
       "walletAddress": "0x4Ba986c8112e9Ede0883aE56edA08437D943b2b7"
     },
     {
       "hostname": "n1.yerbas.org",
-      "port": 8443,
+      "port": 15430,
       "walletAddress": "0x97a162F40FE98d1b03f80f0055dF24c6580fA183"
     },
     {
       "hostname": "n2.yerbas.org",
-      "port": 8443,
+      "port": 15430,
       "walletAddress": "0x12d35055e8A1bd1093ECB16139c79E9Db0f6f1bd"
     },
     {
       "hostname": "n3.yerbas.org",
-      "port": 8443,
+      "port": 15430,
       "walletAddress": "0xE48D61411665ee89890CD904414DEB4f37598553"
     },
     {
       "hostname": "n4.yerbas.org",
-      "port": 8443,
+      "port": 15430,
       "walletAddress": "0xa0dCF63DfF6417c6CC5b1A37761F28e6a7E701E0"
     }
   ],
