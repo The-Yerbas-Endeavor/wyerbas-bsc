@@ -6,8 +6,8 @@
 
 #### 1. Add Change address to yerbas wallet:
 - Ensure Yerbas daemon is running: `yerbasd`.
-- Run `./yerbas-cli createmultisig 3 "[\"020a16865dcfbb809c03bef35cf1f96b3811dc1a77e3c156ab82d0cdbf1a6f7870\", \"033061b8b122fd581aadce0c3cd0fdcc537e38daf795dbbbdf70ffc67dc1bb5daf\", \"028fc2832a72b4d12fbd9e6ea488f5ecac08caa9e174f23becd9a299e308f66f2e\", \"0215ab24c8f808d3604097811547d9bbdeea0fdf1f592c7328fbebbcd84708a82c\", \"0245fe3d0363673a483a3c330829eeb7663930a46e9ef74d67f11fd7557d1a206b\"]"`
-- Ensure that the output is `8pDx3vJfkHYQa1CDWy1NhZZ4GTbT1d5dDo`. This will be the CHANGE_ADDRESS where all holdings are collated at every payout.
+- Run `./yerbas-cli createmultisig 3 "[\"020a16865dcfbb809c03bef35cf1f96b3811dc1a77e3c156ab82d0cdbf1a6f7870\", \"033061b8b122fd581aadce0c3cd0fdcc537e38daf795dbbbdf70ffc67dc1bb5daf\", \"028fc2832a72b4d12fbd9e6ea488f5ecac08caa9e174f23becd9a299e308f66f2e\", \"0260a59e7298e339e0c6bd53142c9279a671c24e95e42672d96a82bf72b7b428ea\", \"0245fe3d0363673a483a3c330829eeb7663930a46e9ef74d67f11fd7557d1a206b\"]"`
+- Ensure that the output is `8zMwZPRNZT5Ltz7ACEVAbejKB6v89wjADn`. This will be the CHANGE_ADDRESS where all holdings are collated at every payout.
 - Run `yerbas-cli importaddress "REDEEM_SCRIPT" "" true true` where REDEEM_SCRIPT is from running `yerbas-cli create multisig...`.
 
 #### 2. Add BSC private key.
@@ -62,7 +62,7 @@
 - `sudo npm install -g yarn`
 - `cd wyerbas-bsc`; `yarn install`
 
-#### 6. Ensure that port ~~32533~~ 8443 is open. Use https://www.yougetsignal.com/tools/open-ports/ to check that port 8443 on your node can be reached with the authority daemon running. If not, check your firewall/VPS provider/ISP settings to make sure that port 8443 is not blocked.
+#### 6. Ensure that port 15430 is open. Use https://www.yougetsignal.com/tools/open-ports/ to check that port 8443 on your node can be reached with the authority daemon running. If not, check your firewall/VPS provider/ISP settings to make sure that port 8443 is not blocked.
 
 #### 7. Launch yerbas daemon and authority daemon.
 - In the appropriate directory, `./yerbasd -daemon` or if running this (as below) in `tmux` or `screen`, you may leave the ` -daemon` out.
