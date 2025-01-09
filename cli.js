@@ -65,7 +65,7 @@ function parseBool(s) {
       link,
       {
         json: data,
-        timeout: { request: 99420 }
+        timeout: { request: 199420 }
       }).json();
     return r;
   }
